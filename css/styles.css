@@ -1,0 +1,351 @@
+/*
+GERAL
+*/
+
+:root {
+  /* colors */
+  --color-primary: #b0b0b0;
+  --color-secondary: #f2994a;
+  --color-red: #f25656;
+  --color-black: #181818;
+  --color-gray: #636363;
+  --color-btn: linear-gradient(to top, #181818, #636363);
+  --color-btn-hover: linear-gradient(to bottom, #181818, #bbbbbb);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-primary);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  /* color: var(--color-primary); */
+}
+
+.botao {
+  color: var(--color-secondary);
+  text-decoration: none;
+  padding: 10px 30px;
+  background: var(--color-btn);
+  font-size: 1em;
+  border: solid 2px var(--color-secondary);
+  border-radius: 1em;
+}
+
+.botao:hover {
+  background: var(--color-btn-hover);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/*
+NAVEGAÇÃO
+*/
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-secondary);
+}
+
+nav img {
+  width: auto;
+}
+
+nav > a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 28px;
+  font-family: Pacifico, serif;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+nav ul li {
+  text-align: center;
+  width: 100%;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 0;
+  width: 100%;
+  text-decoration: none;
+  color: var(--color-black);
+  font-weight: bold;
+}
+
+/*
+CABEÇALHO
+*/
+
+header {
+  background-color: var(--color-black);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin-top: 1.5em;
+  font-family: 'Bilbo Swash Caps', cursive;
+  font-size: 5em;
+}
+
+header h2 {
+  font-family: 'Bilbo Swash Caps', cursive;
+  font-size: 7em;
+}
+
+header h4 {
+  margin-top: 0.2em;
+  margin-bottom: 2em;
+  font-weight: normal;
+}
+
+header h6 {
+  margin-top: 12em;
+  font-weight: normal;
+}
+
+header p {
+  /* margin-bottom: 2em; */
+  margin: 10px;
+  font-size: 5em;
+  color: var(--color-red);
+}
+
+/*
+DESCONTOS
+*/
+
+#descontos {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-primary);
+}
+
+#descontos h2 {
+  color: #945b29;
+}
+
+#descontos h3 {
+  margin-top: 10px;
+  color: var(--color-black);
+}
+
+#descontos p {
+  margin-top: 10px;
+  color: #945b29;
+  font-weight: 900;
+}
+
+#descontos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/*
+CUPOM
+*/
+
+#cupom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  /* padding: 0 20px 20px; */
+  background-color: var(--color-black);
+  color: var(--color-primary);
+}
+
+#cupom p {
+  margin: 1em;
+  max-width: 1000px;
+}
+
+#cupom span {
+  color: var(--color-red);
+}
+
+#sucesso {
+  color: var(--color-secondary);
+}
+
+input {
+  width: 80%;
+  height: 0.2rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  background: var(--color-primary);
+  color: var(--color-black);
+  padding: 1rem;
+}
+
+.resgate {
+  width: 12em;
+  height: 3em;
+  padding: 0;
+  border: solid 0.2rem #f2994a;
+  border-radius: 1rem;
+
+  background: var(--color-btn);
+  color: var(--color-secondary);
+}
+
+.resgate:hover {
+  background-image: var(--color-btn-hover);
+  transition: 0.5s ease;
+}
+
+/*
+CONTATO
+*/
+
+#contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: var(--color-black);
+}
+
+.social-media-container {
+  font-size: 2.5em;
+}
+
+.social-media-container a {
+  color: var(--color-black);
+}
+
+/*
+FOOTER
+*/
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--color-black);
+  color: var(--color-primary);
+}
+footer a {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+/*
+MEDIA QUERIES
+*/
+
+@media screen and (min-width: 768px) {
+  /*
+  NAVEGAÇÃO
+  */
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav ul {
+    flex-direction: row;
+    width: 50%;
+  }
+
+  /*
+  CABEÇALHO
+  */
+
+  header {
+    height: 600px;
+    height: 60vh;
+    justify-content: center;
+  }
+
+  /*
+  CUPOM
+  */
+
+  #cupom {
+    height: 250px;
+    height: 30vh;
+    justify-content: center;
+    min-height: 250px;
+  }
+
+  /*
+  DESCONTOS
+  */
+
+  #descontos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  #descontos img {
+    width: 80%;
+  }
+
+  #descontos h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  #descontos div {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+  }
+
+  /*
+  CONTATO
+  */
+
+  #contato {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  #contato h2,
+  #contato p {
+    width: 100%;
+  }
+}
