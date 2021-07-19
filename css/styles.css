@@ -18,6 +18,10 @@ body {
   background-color: var(--color-primary);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3 {
